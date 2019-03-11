@@ -23,19 +23,19 @@
  *
  * @return array altered $data.
  */
-function hook_urlextern_render_footer($data)
+function hook_url_externe_render_footer($data)
 {
     // List of plugin's JS files.
     // Note that you just need to specify CSS path.
-    $data['js_files'][] = PluginManager::$PLUGINS_PATH . '/urlextern/urlextern.js';
+    $data['js_files'][] = PluginManager::$PLUGINS_PATH . '/url_externe/url_externe.js';
     return $data;
 }
 
 /**
  * This function is never called, but contains translation calls for GNU gettext extraction.
  */
-function urlextern_translation()
+function url_externe_translation()
 {
     // meta
-    t('Open external links in new tab/window');
+    t('Ouverture des liens dans un nouvel onglet');
 }

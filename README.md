@@ -1,4 +1,4 @@
-# shaarli-urlextern
+# shaarli-urlexterne
 [Shaarli](https://github.com/shaarli/Shaarli) plugin to open external links in a new tab/window.
 
 Should work with any template.
