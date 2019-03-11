@@ -1,37 +1,22 @@
 # shaarli-urlexterne
-[Shaarli](https://github.com/shaarli/Shaarli) plugin to open external links in a new tab/window.
+Plugin pour [Shaarli](https://github.com/shaarli/Shaarli) permettant d'ouvrir les liens dans de nouvels onglets.
 
-Should work with any template.
+forked from trailjeep/shaarli-urlextern
+
 
 ## Installation
-The plugin's folder (`urlextern`) should be placed in the `<shaarli>/plugins/` directory.
+Créer un dossier `url_externe` dans le dossier `<shaarli>/plugins/`. Puis placer l'ensemble des fichiers 
 
-The directory structure should look like:
+    ```Shaarli 
+    └── plugins
+        └── url_externe
+            ├── url_externe.js
+            ├── url_externe.meta
+            └── url_externe.php
+    ```
 
-```bash 
-└── plugins
-    └── urlextern
-        ├── urlextern.js
-        ├── urlextern.meta
-        └── urlextern.php
-```
 
-To enable the plugin, just check it in the Plugin Administration page (`?do=pluginadmin`).
-
-You can also add `urlextern` to your list of enabled plugins in `data/config.json.php`.\
-The `general.enabled_plugins` list should look like this:
-
-```
-"general": {
-  "enabled_plugins": [
-    "urlextern",
-    [...]
-  ],
-}
-```
 
 ## Configuration
-None - enable/disable in the Plugin Administration page.
+Activation du plugin directement dans l'administration de Shaarli
 
-## Credits
-Javascript [code](https://gist.github.com/CrocoDillon/7989214) by [@CrocoDillon](https://github.com/CrocoDillon).
